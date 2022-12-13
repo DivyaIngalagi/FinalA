@@ -1,0 +1,12 @@
+<p>switch works!</p>
+
+<label><input type="radio" name="gender" [(ngModel)]="radioSelected" value="Male"/>Male</label>
+<label><input type="radio" name="gender" [(ngModel)]="radioSelected" value="FeMale"/>FeMale</label>
+
+<div [ngSwitch]="radioSelected">
+
+    <p *ngSwitchCase="'Male'">Person is Male</p>
+    <p *ngSwitchCase="'FeMale'">Person is FeMale</p>
+    <p *ngSwitchDefault>Default Data</p>
+
+</div>

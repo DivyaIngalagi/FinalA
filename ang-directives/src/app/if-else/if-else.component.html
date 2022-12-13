@@ -1,0 +1,14 @@
+<p>if-else works!</p>
+
+  
+    <label><input type="checkbox" (change)="toggleShow()"/>Show/Hide</label>
+    <!--<div *ngIf="isShown">-->
+        <div *ngIf="isShown;else parashow">
+        Div Content
+    </div>
+
+    <ng-template #parashow>
+
+        <p>Else Content</p>
+
+    </ng-template>
